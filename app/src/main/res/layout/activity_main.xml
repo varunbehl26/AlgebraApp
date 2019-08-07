@@ -1,0 +1,133 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true">-->
+
+
+        <varunbehl.algebra.view.CustomLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            app:gradient_end="@color/gradient_end"
+            app:gradient_orientation="tl_br"
+            app:gradient_start="@color/gradient_start">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:spanCount="2"
+                android:layout_gravity="center"
+                tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_layout" />
+
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/idCompare"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/comparemain"-->
+                <!--android:visibility="gone" />-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="6dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="gone">-->
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ibf"-->
+                    <!--android:layout_width="77dp"-->
+                    <!--android:layout_height="77dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_weight="25"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/compare" />-->
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ibs"-->
+                    <!--android:layout_width="77dp"-->
+                    <!--android:layout_height="77dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_weight="25"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/paintpalette" />-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ibt"-->
+                    <!--android:layout_width="77dp"-->
+                    <!--android:layout_height="77dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_weight="25"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/randomadd" />-->
+
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/ibfour"-->
+                    <!--android:layout_width="77dp"-->
+                    <!--android:layout_height="77dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_weight="25"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/squareroot" />-->
+            <!--</LinearLayout>-->
+
+        </varunbehl.algebra.view.CustomLinearLayout>
+    <!--</ScrollView>-->
+
+</layout>
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="0dp"--><!--android:layout_weight="40"--><!--android:orientation="vertical"--><!--android:weightSum="100">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="0dp"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:baselineAligned="false"--><!--android:orientation="horizontal"--><!--android:weightSum="100">-->
+
+    <!--<Button--><!--android:id="@+id/ibAdd"--><!--android:layout_width="77dp"--><!--android:layout_height="77dp"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:background="@drawable/button_curved"--><!--android:scaleType="fitCenter"--><!--android:text="+"--><!--android:textColor="@color/black"--><!--android:textSize="48dp"--><!--/>-->
+
+
+    <!--<Button--><!--android:id="@+id/ibSub"--><!--android:layout_width="77dp"--><!--android:layout_height="77dp"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:gravity="center"--><!--android:background="@drawable/button_curved"--><!--android:text="-"--><!--android:textColor="@color/black"--><!--android:textSize="48dp"--><!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="0dp"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:orientation="horizontal">-->
+
+
+    <!--<Button--><!--android:id="@+id/ibMul"--><!--android:layout_width="77dp"--><!--android:layout_height="77dp"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:gravity="center"--><!--android:background="@drawable/button_curved"--><!--android:text="*"--><!--android:textColor="@color/black"--><!--android:textSize="48dp"--><!--/>-->
+
+    <!--<Button--><!--android:id="@+id/ibDiv"--><!--android:layout_width="77dp"--><!--android:layout_height="77dp"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:layout_weight="50"--><!--android:gravity="center"--><!--android:background="@drawable/button_curved"--><!--android:text="/"--><!--android:textColor="@color/black"--><!--android:textSize="48dp"--><!--/>--><!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+

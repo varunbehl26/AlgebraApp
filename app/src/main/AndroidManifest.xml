@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="varunbehl.algebra">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="varunbehl.algebra.ui.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="varunbehl.algebra.ui.BasicMathsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <activity
+            android:name="varunbehl.algebra.ui.notUsedNow.ColorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="varunbehl.algebra.ui.CompareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="varunbehl.algebra.ui.EquationSolverActivity"
+            android:label="@string/title_activity_equation_solver"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

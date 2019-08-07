@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <varunbehl.algebra.view.CustomLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:corner_radius="@dimen/size4"
+        app:gradient_end="@color/white"
+        app:gradient_start="@color/white"
+        tools:context=".ui.StartupActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Game Over "
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/diaResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            tools:text="Current Score:600"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/totalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            tools:text="High Score:600"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+
+            />
+
+
+    </varunbehl.algebra.view.CustomLinearLayout>
+</layout>
+
+
+
+
+
